@@ -1,6 +1,14 @@
 function firstChar(text) {
   // your code here
- return text[0]
+ const trimmedInput = input.trim();
+    
+    // Check if the trimmed input is empty
+    if (trimmedInput === '') {
+        return '';
+    }
+    
+    // Return the first character of the trimmed input
+    return trimmedInput.charAt(0);
 }
 
 // Do not change the code below
